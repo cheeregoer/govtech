@@ -1,0 +1,1 @@
+insert into transaction values(1, "123ABC", "Pineapple", "This is a Pineapple", 4, "2020/01/01", 3.2, 1, "Singapore")

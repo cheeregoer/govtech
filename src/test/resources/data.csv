@@ -1,0 +1,5 @@
+InvoiceNo,StockCode,Description,Quantity,InvoiceDate,UnitPrice,CustomerID,Country
+4,,Pen Pineapple Apple Pen,1,2099/12/12,999.0,2,Singapore
+3,123ABC,Pen,10,2020/01/01,2.0,1,Singapore
+2,123ABC,Apple,7,2020/01/01,1.4,1,Singapore
+1,123ABC,Pineapple,4,"2020/01/01",3.2,1,Singapore
