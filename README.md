@@ -20,9 +20,9 @@ know the progress of the file upload, listing of data and searching of data.
 #Solutioning Process
 Came up with the solution of using Spring Webflux with R2DBC H2 embedded database. The repository is leveraging on ReactiveCrudRepository, hence most of the hard work of pagination would've been handled by Spring. I was hesitant in using ReactiveCrudRepository, as there were online discussion saying that the pagination does not have reactive support, although the safer way would've been to write the @Query with OFFSET and LIMIT. 
 
-I'm using the annotation way of writing my controller function, instead of the functional way of writing router and handler 
+I'm using the annotation way of writing my controller function, instead of the functional way of writing router and handler, as i was having trouble with writing the test case for it
 
-Upload data (POST "/upload") - Was iniitally thinking on how to do an async file upload, but couldn't figure out on how to read the byte array and translate to individual records of the data file. Hence went with a BufferedInputstream with CSVParser to read the records, and saving it.Basically it is a POST call, which takes in form-data of key "file" and to data.csv file and returns a 
+Upload data (POST "/upload") - Was initially thinking on how to do an async file upload, but couldn't figure out on how to read the byte array and translate to individual records of the data file. Hence went with a BufferedInputstream with CSVParser to read the records, and saving it.Basically it is a POST call, which takes in form-data of key "file" and to data.csv file
 
 List data (GET /all?page=&size=) - To retrieve information via ReactiveCrudRepository
 
